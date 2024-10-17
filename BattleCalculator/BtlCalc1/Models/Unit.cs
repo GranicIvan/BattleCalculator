@@ -31,7 +31,7 @@ namespace BtlCalc1.Models
 
 
 
-        /*
+        /* KAKO odraditi napade
          
          public class Fight
     {
