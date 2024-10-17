@@ -1,4 +1,4 @@
 BUTTON: 
-	* Width:  50
-	* Height: 25
-	* colo 
+* Width:  50
+* Height: 25
+* colo 
