@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using BtlCalc1.View;
+using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,6 +27,18 @@ namespace BtlCalc1
         {
             Console.WriteLine("Hello, World!");
             Trace.WriteLine("TRACE ");
+
+        }
+
+        private void Battle1v1_Click(object sender, RoutedEventArgs e)
+        {
+
+            Battle1v1 battle = new Battle1v1();
+            //battle.Owner = this;  // Set the owner so it stays on top of the main window
+            battle.Show();
+
+            
+
 
         }
     }

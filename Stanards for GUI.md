@@ -1,4 +1,7 @@
 BUTTON: 
-* Width:  50
+* Width:  x
 * Height: 25
-* colo 
+* color 
+* padding L:5 R:5 U:3 D:3
+
+MARGINES:
