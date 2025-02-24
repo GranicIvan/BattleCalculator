@@ -9,25 +9,35 @@ namespace BtlCalc1.Models
     internal class Unit
     {
 
-        private string name {  get; set; }
-        private double hp; // health points
-        private double atk; // attack 
-        private double armor;
-        private double attackSpeed; // attacks per second
+        public string Name {  get; set; }
+        public double Hp { get; set; } // health points
+        public double Attack { get; set; } // attack 
+        public double Armor { get; set; }
+        public double AttackSpeed { get; set; } // attacks per second
 
         public Unit(string name, double hp, double atk, double armor, double attackSpeed)
         {
-            this.name = name;
-            this.hp = hp;
-            this.atk = atk;
-            this.armor = armor;
-            this.attackSpeed = attackSpeed;
+            this.Name = name;
+            this.Hp = hp;
+            this.Attack = atk;
+            this.Armor = armor;
+            this.AttackSpeed = attackSpeed;
+        }
+
+        public Unit(string name, double hp, double atk, double attackSpeed)
+        {
+            this.Name = name;
+            this.Hp = hp;
+            this.Attack = atk;            
+            this.AttackSpeed = attackSpeed;
         }
 
         public bool isAlive()
         {
-            return hp > 0;
+            return Hp > 0;
         }
+
+
 
 
 

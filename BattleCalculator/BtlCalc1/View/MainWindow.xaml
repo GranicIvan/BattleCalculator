@@ -9,7 +9,7 @@
     <Grid>
         <Button x:Name="TestKonzola" Content="Test ispis na konzolu" HorizontalAlignment="Right" Margin="0,0,15,15" VerticalAlignment="Bottom" Click="Button_Click" FontSize="14" Padding="5,3,5,3" UseLayoutRounding="True"/>
         <Button x:Name="_1v1battle" Content="1 V 1 battle" HorizontalAlignment="Left" Margin="59,59,0,0" VerticalAlignment="Top" Padding="5,4,5,4" ScrollViewer.CanContentScroll="True" FontSize="14" Click="Battle1v1_Click"/>
-        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,50,0,0"/>
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,50,0,0" />
 
 
     </Grid>

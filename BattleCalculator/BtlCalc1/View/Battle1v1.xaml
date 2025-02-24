@@ -19,26 +19,45 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
                 
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
 
             </Grid.ColumnDefinitions>
 
+            <!-- Player 1 -->
+            <Label x:Name="player1" Content="Player1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
+
+            <Label x:Name="LblHP1" Content="HP" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
+            <TextBox x:Name="TbHP1" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1"  TextWrapping="Wrap" Text="Enter HP" VerticalAlignment="Top" FontSize="14" Margin="5,5,5,5" Padding="3,3,3,3" />
+
+            <Label x:Name="LblATK1" Content="ATK" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
+            <TextBox x:Name="TbATK1" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="1"  TextWrapping="Wrap" Text="Enter ATK" VerticalAlignment="Top" FontSize="14" Margin="5,5,5,5" Padding="3,3,3,3"/>
+
+            <Label x:Name="LblAtkSpd1" Content="ATK SPD" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
+            <TextBox x:Name="TbAtkSpd1" HorizontalAlignment="Stretch" Grid.Row="3" Grid.Column="1"  TextWrapping="Wrap" Text="Enter ATK Speed" VerticalAlignment="Top" FontSize="14" Margin="5,5,5,5" Padding="3,3,3,3"/>
 
 
-            <Label x:Name="LblHP" Content="HP" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
-            <TextBox x:Name="TbHP" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="1"  TextWrapping="Wrap" Text="{Binding hp, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120" FontSize="14" Margin="5,5,5,5" Padding="3,3,3,3"/>
+            <!-- Player 2 -->
 
-            <Label x:Name="LblATK" Content="ATK" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
-            <TextBox x:Name="TbATK" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1"  TextWrapping="Wrap" Text="Enter ATK" VerticalAlignment="Top" Width="120" FontSize="14" Margin="5,5,5,5" Padding="3,3,3,3"/>
+            <Label x:Name="player2" Content="Player 2" Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
 
-            <Label x:Name="LblAtkSpd" Content="ATK SPD" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
-            <TextBox x:Name="TbAtkSpd" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="1"  TextWrapping="Wrap" Text="Enter ATK Speed" VerticalAlignment="Top" Width="120" FontSize="14" Margin="5,5,5,5" Padding="3,3,3,3"/>
+            <Label x:Name="LblHP2" Content="HP" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
+            <TextBox x:Name="TbHP2" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="4"  TextWrapping="Wrap" Text="Enter HP" VerticalAlignment="Top" FontSize="14" Margin="5,5,5,5" Padding="3,3,3,3"/>
+
+            <Label x:Name="LblATK2" Content="ATK" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
+            <TextBox x:Name="TbATK2" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="4"  TextWrapping="Wrap" Text="Enter ATK" VerticalAlignment="Top" FontSize="14" Margin="5,5,5,5" Padding="3,3,3,3"/>
+
+            <Label x:Name="LblAtkSpd2" Content="ATK SPD" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5,5,5,5" FontSize="14"/>
+            <TextBox x:Name="TbAtkSpd2" HorizontalAlignment="Stretch" Grid.Row="3" Grid.Column="4"  TextWrapping="Wrap" Text="Enter ATK Speed" VerticalAlignment="Top" FontSize="14" Margin="5,5,5,5" Padding="3,3,3,3"/>
+
 
 
         </Grid>
@@ -55,7 +74,7 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="Calculate" Grid.Column="0" Content="Calculate" HorizontalAlignment="Right" Margin="8,8,8,8" VerticalAlignment="Bottom" Padding="5,4,5,4" ScrollViewer.CanContentScroll="True" UseLayoutRounding="False" Click="BackBtn_Click"/>
+            <Button x:Name="Calculate" Grid.Column="0" Content="Calculate" HorizontalAlignment="Right" Margin="8,8,8,8" VerticalAlignment="Bottom" Padding="5,4,5,4" UseLayoutRounding="False" Click="Calculate_Click"/>
 
             <Button x:Name="BackBtn" Grid.Column="1" Content="Back" HorizontalAlignment="Right" Margin="8,8,8,8" VerticalAlignment="Bottom" Padding="5,4,5,4" ScrollViewer.CanContentScroll="True" UseLayoutRounding="False" Click="BackBtn_Click"/>
 
