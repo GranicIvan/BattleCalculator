@@ -64,18 +64,15 @@ namespace BtlCalc1.View
                 double.TryParse(hpTextP2, out double hpP2) &&
                 double.TryParse(atkTextP2, out double atkP2) &&
                 double.TryParse(atkSpdTextP2, out double atkSpdP2))
-            {
-                // Use the parsed values for your calculations
-                // Example: int result = hp + atk + atkSpd;
-
-                Trace.WriteLine("Player 1: hp=" + hpP1 + ", attack=" + atkP1 + ", attack speed=" + atkSpdP1);
-                Trace.WriteLine("Player 2: hp=" + hpP2 + ", attack=" + atkP2 + ", attack speed=" + atkSpdP2);
+            {              
 
                 Unit p1 = new Unit("player1", hpP1, atkP1, atkSpdP1);
                 Unit p2 = new Unit("player2", hpP2, atkP2, atkSpdP2);
 
-                Battle1v1VM.Battle1v1(p1, p2);
-
+                BattleResult1v1 result =  Battle1v1VM.Battle1v1(p1, p2);
+                Trace.WriteLine(result);
+                // Display the result in a MessageBox
+                MessageBox.Show(result.ToString());
 
             }
             else

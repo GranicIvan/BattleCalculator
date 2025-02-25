@@ -10,31 +10,32 @@ namespace BtlCalc1.Models
     {
 
         public string Name {  get; set; }
-        public double Hp { get; set; } // health points
-        public double Attack { get; set; } // attack 
+        public double HP { get; set; } // health points
+        public double StartingHP { get; set; }
+        public double Attack { get; set; }  
         public double Armor { get; set; }
         public double AttackSpeed { get; set; } // attacks per second
 
         public Unit(string name, double hp, double atk, double armor, double attackSpeed)
         {
-            this.Name = name;
-            this.Hp = hp;
-            this.Attack = atk;
-            this.Armor = armor;
-            this.AttackSpeed = attackSpeed;
+            Name = name;
+            StartingHP = HP = hp;
+            Attack = atk;
+            Armor = armor;
+            AttackSpeed = attackSpeed;
         }
 
         public Unit(string name, double hp, double atk, double attackSpeed)
         {
-            this.Name = name;
-            this.Hp = hp;
-            this.Attack = atk;            
-            this.AttackSpeed = attackSpeed;
+            Name = name;
+            StartingHP = HP = hp;
+            Attack = atk;            
+            AttackSpeed = attackSpeed;
         }
 
         public bool isAlive()
         {
-            return Hp > 0;
+            return HP > 0;
         }
 
 
