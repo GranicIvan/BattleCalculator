@@ -50,7 +50,7 @@ namespace BtlCalc1.ViewModels
         public static void DealSimpleDamage(this Unit p1, Unit p2)
         {
             double damage = p1.Attack;
-            p2.HP -= damage;
+            p2.HP -= (100 - p2.Armor) *  damage;
             //Trace.WriteLine(p1.Name + " deals " + damage + " damage to " + p2.Name + ". " + p2.Name + " has " + p2.Hp + " HP left.");
         }
     }

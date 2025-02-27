@@ -31,6 +31,7 @@ namespace BtlCalc1.Models
             StartingHP = HP = hp;
             Attack = atk;            
             AttackSpeed = attackSpeed;
+            Armor = 0;
         }
 
         public bool isAlive()
